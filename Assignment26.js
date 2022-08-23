@@ -7,7 +7,7 @@
 
 let abbrev = (str) => {
     let names = str.split(" ");
-    return `${names[0]} ${names[1].charAt(0)}.`;
+    return names.length > 1 ? `${names[0]} ${names[1].charAt(0)}.` : names[0];
 };
 
 console.log(abbrev("John Doe Marcus"));
